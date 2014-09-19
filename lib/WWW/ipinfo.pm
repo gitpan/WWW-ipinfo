@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 package WWW::ipinfo;
-$WWW::ipinfo::VERSION = '0.01';
+$WWW::ipinfo::VERSION = '0.02';
 use HTTP::Tiny;
 use 5.008;
 use JSON;
@@ -25,6 +25,7 @@ sub get_ipinfo {
    decode_json($response->{content}); 
 }
 
+
 1;
 
 __END__
@@ -39,7 +40,7 @@ WWW::ipinfo - Returns your ip address and geolocation data using L<http://ipinfo
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 
@@ -75,6 +76,10 @@ Example
 
     my $ipinfo = get_ipinfo();
     my $ip = $ipinfo->{ip};
+
+=head1 SEE ALSO
+
+L<WWW::curlmyip> - a similar module that returns your ip address
 
 =head1 AUTHOR
 

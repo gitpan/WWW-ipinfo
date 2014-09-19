@@ -25,4 +25,4 @@ requires:
 resources:
   homepage: https://github.com/sillymoose/WWW-ipinfo
   repository: https://github.com/sillymoose/WWW-ipinfo.git
-version: '0.01'
+version: '0.02'
