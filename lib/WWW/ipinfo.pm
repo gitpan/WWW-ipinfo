@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 package WWW::ipinfo;
-$WWW::ipinfo::VERSION = '0.03';
+$WWW::ipinfo::VERSION = '0.04';
 use HTTP::Tiny;
 use 5.008;
 use JSON;
@@ -29,6 +29,7 @@ sub get_ipinfo {
 }
 
 
+
 1;
 
 __END__
@@ -43,7 +44,7 @@ WWW::ipinfo - Returns your ip address and geolocation data using L<http://ipinfo
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 SYNOPSIS
 
@@ -86,6 +87,14 @@ Example
 =head1 SEE ALSO
 
 L<WWW::curlmyip> - a similar module that returns your ip address
+
+L<WWW::hmaip> - a similar module that returns your ip address
+
+L<WWW::IP> - a module that uses up to 3 services to retrieve your IP address
+
+=head1 CONTRIBUTORS
+
+Jon D Jones III
 
 =head1 AUTHOR
 
